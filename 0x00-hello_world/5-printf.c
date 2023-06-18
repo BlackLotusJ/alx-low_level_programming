@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - function to print a sentence
- * return : always will return 0
+ * Return : always will return 0
 */
 int main(void)
 {
