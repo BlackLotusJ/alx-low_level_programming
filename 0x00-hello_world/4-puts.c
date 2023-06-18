@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main-Function to output using puts
- * retun : always 0
+ * main - Function to output using puts
+ * Return: always 0 (success)
 */
 int main(void)
 {
