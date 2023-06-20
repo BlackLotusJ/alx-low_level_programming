@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -7,20 +6,20 @@
  */
 int main(void)
 {
-	int one;
-	int two;
+	int num1;
+	int num2;
 
-	for (one = 0; one < 99; one++)
+	for (num1 = 0; num1 < 99; num1++)
 	{
-		for (two = one + 1; two <= 99; two++)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			putchar((one / 10) + '0');
-			putchar((one % 10) + '0');
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
 			putchar(' ');
-			putchar((two / 10) + '0');
-			putchar((two % 10) + '0');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
 
-			if (one == 98 && two == 99)
+			if (num1 == 98 && num2 == 99)
 				continue;
 
 				putchar(',');
