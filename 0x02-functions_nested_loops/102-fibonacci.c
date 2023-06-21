@@ -1,20 +1,26 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: Function to print out fibonacci numbers from 1 t0o 50
- * Return: ALways 0 (success)
+ * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int n1 = 1, n2 = 2, n3, i, total = 50;
+	long int start = 0;
+	long int nextdigit = 1;
+	long int sum = 0;
+	int number = 0;
 
-	printf("\n%d%d", n1, n2);
-	for (i = 3 ; i < total ; ++i)
+	while (number < 49)
 	{
-		n3 = n1 + n2;
-		printf("%d, ", n3);
-		n1 = n2;
-		n2 = n3;
+		sum = start + nextdigit;
+		printf("%li, ", sum);
+		start = nextdigit;
+		nextdigit = sum;
+		number++;
 	}
+	sum = start + nextdigit;
+	printf("%li\n", sum);
 	return (0);
 }
+
