@@ -11,7 +11,7 @@ int main(void)
 	unsigned long int n3 = 0;
 	unsigned long total = 0;
 
-	while (total < 99)
+	while (total <= 99)
 	{
 		n3 = n1 + n2;
 		printf("%lu", n3);
