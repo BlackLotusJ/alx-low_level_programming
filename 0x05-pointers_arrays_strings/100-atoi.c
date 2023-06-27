@@ -23,4 +23,5 @@ int _atoi(char *str)
 			break;
 	}
 	number = number * sign;
+	return (number);
 }
