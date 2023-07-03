@@ -6,13 +6,16 @@
  * @n: number of bytes to fill pointed by s
  * Return: memory area
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *p = s;
+	int bytes = n;
 
-	while (n--)
+	if (bytes > 0)
 	{
-		*ptr++ = b;
+		for (int i = 0; i < bytes; i++)
+			s[i] = b;
 	}
 	return (s);
 }
+
