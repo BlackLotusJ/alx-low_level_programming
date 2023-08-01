@@ -6,7 +6,7 @@
 size_t print_list(const listint_t *h)
 {
 	const listint_t *current = h;
-	size_t current;
+	size_t count = 1;
 
 	while (current != NULL)
 	{
