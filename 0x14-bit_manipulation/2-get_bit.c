@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- * set_bit - set bit to 1 at index
+ * get_bit - get bit at index
  * @n: number
  * @index: index within binary number
- * Return: 1 if success, or -1 if error
+ * Return: bit 0 or 1, or -1 if error
  */
-int set_bit(unsigned long int *n, unsigned int index)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int num = 1;
+	int bit, bin;
 
 	if (index > (sizeof(unsigned long int) * 8))
 		return (-1);
 
-	num <<= index;/*shift the value in set left by 1 bit.*/
-	/*num <<= index is the same as num = num << index*/
+	bin = n >> index;/*right shift bitwise operator*/
 
-	*n = *n | num;/*bitwise OR operator*/
-	return (1);
+	bit = bin & 1;/*AND bitwise operator*/
+
+	return (bit);
+
 }
